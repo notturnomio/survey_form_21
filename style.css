@@ -1,0 +1,183 @@
+body {
+    background: #02c9da;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 115deg, rgba(254, 215, 1, 0.8), rgba(2, 200, 218, 0.7)), url(img/cadaques_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main {
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 0px;
+    background: rgba(0, 104, 123, 0.8);
+    align-content: center;
+    max-width: 800px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #f2f2f2;
+}
+
+@media (min-width: 576px) {
+    #main {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    #main {
+        max-width: 720px;
+    }
+}
+
+#title {
+    font-family: "Cormorant Garamond", serif;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-block-end: 0em;
+    text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.4);
+    font-style: italic;
+}
+
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-block-end: 0em;
+    text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.4);
+    font-style: italic;
+}
+
+p {
+    text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.4);
+    font-weight: 300;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #f2f2f2;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.4);
+    text-align: center;
+}
+
+header {
+    padding: 0 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.p-descript {
+    text-align: left;
+    margin-bottom: 0.3rem;
+    margin-top: 2rem;
+    font-weight: 300;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.4);
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: inherit;
+    box-align: center;
+    font-weight: 300;
+}
+
+#dropdown {
+    height: 2.2rem;
+    padding: 0.2rem 0.5rem;
+    color: rgb(118, 118, 118);
+    width: 715px;
+    font-weight: 300;
+}
+
+.form-control {
+    display: block;
+    margin: 0px auto;
+    width: 700px;
+    height: 2rem;
+    padding: 0.2rem 0.5rem;
+    color: rgb(118, 118, 118);
+    font-weight: 300;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border: 2px solid rgba(254, 215, 1, 1);
+    outline: rgba(254, 215, 1, 1);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 700px;
+    padding: 0.625rem;
+    resize: vertical;
+    border-radius: 0.25rem;
+    color: rgb(118, 118, 118);
+    font-weight: 300;
+}
+
+.input-textarea:focus {
+    border: 2px solid rgba(254, 215, 1, 1);
+    outline: rgba(254, 215, 1, 1);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button {
+    border: none;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(254, 215, 1, 1);
+    color: rgb(0, 86, 123);
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+}

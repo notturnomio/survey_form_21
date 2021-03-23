@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey form - "Cadaques" Boutique Hotel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Fira+Sans:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main id="main">
+        <header>
+            <h1 id="title">"Cadaques" Boutique Hotel</h1>
+            <h3>Survey form</h3>
+            <p class="description" id="description">Please complete our survey, it will only take a couple of minutes and is very important to us.</p>
+        </header>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            <label id="email-label" for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your E-mail" required>
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="16" max="100" class="form-control" placeholder="Age">
+
+            <p class="p-descript">How did you hear about our hotel?</p>
+            <select id="dropdown" name="source" class="form-control" required>
+                <option disabled selected value>Select your option</option>
+                <option value="search">Search engine (e.g. Google, Yahoo)</option>
+                <option value="referal">Friend referal</option>
+                <option value="magazine">Magazine</option>
+                <option value="company">Company travel program</option>
+                <option value="trip-advisor">Travel review website (e.g. Trip Advisor)</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p class="p-descript">How did you make your reservation?</p>
+            <label><input name="reservation" value="agency" type="radio" class="input-radio"/>Travel agency</label>
+            <label><input name="reservation" value="website" type="radio" class="input-radio"/>Direct from website</label>
+            <label><input name="reservation" value="other" type="radio" class="input-radio" checked/>Other</label>
+
+            <p class="p-descript">What you liked the most from "Cadaques" Hotel?</p>
+            <label><input name="prefer" value="location" type="checkbox" class="input-checkbox"/>Location</label>
+            <label><input name="prefer" value="interior-design" type="checkbox" class="input-checkbox"/>Interior Design</label>
+            <label><input name="prefer" value="meals" type="checkbox" class="input-checkbox"/>Meals</label>
+            <label><input name="prefer" value="room-service" type="checkbox" class="input-checkbox"/>Room service</label>
+            <label><input name="prefer" value="front-desk" type="checkbox" class="input-checkbox"/>Front desk staff</label>
+            <label><input name="prefer" value="shuttle" type="checkbox" class="input-checkbox"/>Shuttle service</label>
+            <label><input name="prefer" value="pricing" type="checkbox" class="input-checkbox"/>Pricing and plans</label>
+
+            <p class="p-descript">Do you have any other comments, questions or concerns?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+
+            <p class="description">Thank you for taking the time to help us improve our service.</p>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+
+        </form>
+
+    </main>
+</body>
+
+</html>
